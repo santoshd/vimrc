@@ -1,0 +1,59 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Configuration borrowed heavily from,
+" http://amix.dk/vim/vimrc.html
+"
+" Santosh Dawara
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use Vim settings, rather then Vi settings (much better!).
+set nocompatible
+
+" Sets how many lines of history VIM has to remember
+set history=700
+
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" Turn on the verboseness to see everything vim is doing.
+"set verbose=9
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" I like 4 spaces for indenting
+set shiftwidth=4
+
+" I like 4 stops
+set tabstop=4
+
+" Spaces instead of tabs
+set expandtab
+
+" Always  set auto indenting on
+set autoindent
+
+" Enable line numbers
+set number
+
+" Enable the ruler
+set ruler
+
+" solarized color scheme
+" disable and enable to switch schemes
+syntax enable
+"set background=dark
+"set background=light
+if has('gui_running')
+    "set background=light
+    set background=dark
+else
+    set background=dark
+endif
+colorscheme solarized
