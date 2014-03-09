@@ -45,6 +45,16 @@ set number
 " Enable the ruler
 set ruler
 
+" Set text width with the t formatoption set.
+" This will hard wrap at word boundaries.
+set tw=79
+set formatoptions+=t
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Solarized
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " solarized color scheme
 " disable and enable to switch schemes
 syntax enable
